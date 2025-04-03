@@ -1,6 +1,8 @@
 # Context and Layers in Harmony: A Unified Strategy for Mitigating LLM Hallucinations
 
 ## Abstract
+![overvall](https://github.com/user-attachments/assets/5f831f9d-99e5-419e-a3fb-6cbc2c4837c0)
+
 Large language models, despite their strong performance, often overlook newly provided prompts and produce hallucinated content due to excessive reliance on pre-trained knowledge. We propose LACD, a technique that dynamically selects tokens by analyzing probability distributions across layers. By restoring neglected context, LACD directs more attention to prompt information and suppresses the overshadowing influence of prior knowledge from lower to final layers. On the HotPot QA dataset, LACD delivers up to a 2.2% improvement over simple context augmentation and performs similarly to or better than existing methods (e.g., DoLa, CAD). These findings indicate that LACD effectively mitigates hallucination while enhancing factual reliability.
 
 ## Results
