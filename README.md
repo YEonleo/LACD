@@ -24,7 +24,8 @@ Install all required Python packages listed in `requirements.txt`:
 
 ```bash
 pip install -r requirements.txt
+```
 
+## License
 
-###License
 This project is licensed under the MIT License. You are free to use, modify, and distribute this software in accordance with the terms of the license.
