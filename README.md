@@ -7,34 +7,11 @@ Large language models, despite their strong performance, often overlook newly pr
 
 Below is the performance of LACD compared to various baselines and methods on the HotPotQA and SQuAD datasets:
 
-```latex
-\begin{table}[ht]
-\centering
-\caption{Exact Match(EM) and F1-score on two QA datasets (HotPotQA and SQuAD).}
-\label{tab:decoding-results}
-\begin{tabular}{l|cc|cc}
-\hline
-\multirow{2}{*}{\textbf{Model}} 
- & \multicolumn{2}{c|}{\textbf{HotPotQA}} 
- & \multicolumn{2}{c}{\textbf{SQuAD}} \\
-\cline{2-5}
- & \textbf{EM} & \textbf{F1} & \textbf{EM} & \textbf{F1} \\
-\hline
+| **Model**                                 | **EM (HotPotQA)** | **F1 (HotPotQA)** | **EM (SQuAD)** | **F1 (SQuAD)** |
+|-------------------------------------------|-------------------:|------------------:|---------------:|---------------:|
+| **Baseline (w/o context)**               | 2.23              | 4.33              | 2.69           | 4.62           |
+| **Baseline (w. context)**                | 38.84             | 52.91             | 15.61          | 25.31          |
+| **DoLa [\citeyearpar{chuang2023dola}]**  | 38.93             | 56.50             | 16.62          | 28.30          |
+| **CAD [\citeyearpar{shi2024trusting}]**  | 39.08             | 55.70             | 30.12          | 45.29          |
+| **LACD (Ours)**                          | **41.01**         | **56.84**         | **30.35**      | **46.13**      |
 
-\textbf{Baseline (w/o context)} 
- & 2.23 & 4.33 & 2.69 & 4.62 \\
-\textbf{Baseline (w. context)} 
- & 38.84 & 52.91 & 15.61 & 25.31 \\
-\cline{1-5}
-
-\textbf{DoLa \citeyearpar{chuang2023dola}} 
- & 38.93 & 56.50 & 16.62 & 28.30 \\
-\textbf{CAD \citeyearpar{shi2024trusting}}
- & 39.08 & 55.70 & 30.12 & 45.29 \\
-\cline{1-5}
-
-\textbf{LACD (Ours)} 
- & \textbf{41.01} & \textbf{56.84} & \textbf{30.35} & \textbf{46.13} \\
-\hline
-\end{tabular}
-\end{table}
