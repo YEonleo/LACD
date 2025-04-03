@@ -28,6 +28,12 @@ Install all required Python packages listed in `requirements.txt`:
 pip install -r requirements.txt
 ```
 
+### How to run
+
+```bash
+python main.py --dataset hotpot_qa --mode LACD
+```
+
 ## License
 
 This project is licensed under the MIT License. You are free to use, modify, and distribute this software in accordance with the terms of the license.
